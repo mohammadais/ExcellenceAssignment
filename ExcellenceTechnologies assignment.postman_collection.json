@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "c2a8d6fd-12fd-4f5e-a258-55757942cf7d",
+		"name": "ExcellenceTechnologies assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Ayaz Alam\",\n\t\"email\": \"ayaz@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api"
+					]
+				},
+				"description": "Insert a candidate into database\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Highest Score and average scores of candidate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api"
+					]
+				},
+				"description": "Api to get highest scoring candidate and average scores per round for all candidates\n"
+			},
+			"response": []
+		},
+		{
+			"name": "update test score",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"ayaz@gmail.com\",\n\t\"first_round\": \"8\",\n\t\"second_round\": \"1\",\n\t\"third_round\": \"0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api"
+					]
+				},
+				"description": "Assign score for a candidate based on the test\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert new candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Ayaz Alam\",\n\t\"email\": \"ayaz@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api"
+					]
+				},
+				"description": "Inset a candidate in the database"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
